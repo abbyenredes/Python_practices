@@ -86,3 +86,27 @@ nombre = input("dime tu nombre: ")
 print("Bienvenido", nombre)
 
 ```
+## Creemos un programa simple con lo aprendido
+Vamos a crear el nombre de una marca usando dos palabras, entre los requisitos esta que este entre comillas y haya un salto de linea:
+
+Primero creare un mensaje para el usuario: 
+```python
+
+print("Bienvenido, te voy a ayudar a crear un nombre único para tu marca")
+
+```
+Después agregaré las 2 variables en las que se guarde la información del nombre y sus respectivas preguntas:
+```python
+
+print("Bienvenido, te voy a ayudar a crear un nombre único para tu marca")
+animal = input("Dime un animal que te inspire: ")
+adjetivo = input("Dime un adjetivo que describa tu momento favorito: ")
+```
+Por último nos queda mostrar el resultado en pantalla:
+```python
+
+print("Bienvenido, te voy a ayudar a crear un nombre único para tu marca")
+animal = input("Dime un animal que te inspire: ")
+adjetivo = input("Dime un adjetivo que describa tu momento favorito: ")
+"¡Enhorabuena!\n El nombre de tu negocio es: " "\"",animal, adjetivo,"\"")
+```
