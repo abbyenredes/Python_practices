@@ -57,5 +57,32 @@ print(name)
 >
 > Para compilar en python usamos: ``` python3 nomebre_archivo.py ```
 
-## Acerca de strings
-Vamos a concatenar
+## Usando input
+Vamos a utilizar la función input para que el usuario final pueda introducir datos y nosotros podamos usarlos y almacenarlos:
+```python
+
+input("Dime tu nombre: ")
+
+```
+Con esto solo nos pedira nuestro dato, sin embargo no lo almacena ni muestra en ningun lado. Si queremos visualizarlo usaremos lo siguiente:
+
+```python
+
+print(input("dime tu nombre: "))
+
+```
+Si queremos hacerlo más personalizado:
+```python
+
+print("hola " + input("dime tu nombre: "))
+
+```
+¿Por qué el +? es para concatenar una cadena y así nuestro pequeño programa nos muestre un saludo personalizado.
+Ahora vamos a guardar la información en una variable:
+
+```python
+
+nombre = input("dime tu nombre: ")
+print("Bienvenido", nombre)
+
+```
