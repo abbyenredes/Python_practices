@@ -12,3 +12,6 @@ Hola autoestopista, hoy me acompañaras a crear una calculadora de comisiones pa
 | tuples (tuple) | Son un conjunto ordenado de elementos(cualquier tipo de dato), también va ordenado por índices, la mayor diferencia con las listas es que su orden es inmutable. Van escritos entre () y se concatenan ",". ('jan','feb','mar','apr'). |
 | sets (set) | Se trata de un conjunto ordenado de elementos únicos , tanto listas como tuplas pueden tener elementos repetidos, pero en sets no pasa eso ya que cada elemento es único e irrepetible, van entre {} y concatenados "," {'a','b','c'} |
 | booleanos (bool) | Son valores lógicos sencillos ya que solo tienen dos valores, verdadero o falso, lo vamos a emplear cuando necesitemos que en nuestro código tome decisiones, es decir si una condición se cumple o no: True, False  |
+
+## Repaso de variables
+Me gusta pensar que las variables son cajas en las que almacenamos cosas, esas cosas son los tipos de datos anteriormente vistos. En programación una variable se trata de un espacio en la memoria reservado para guardar información.
