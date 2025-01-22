@@ -14,4 +14,32 @@ Hola autoestopista, hoy me acompañaras a crear una calculadora de comisiones pa
 | booleanos (bool) | Son valores lógicos sencillos ya que solo tienen dos valores, verdadero o falso, lo vamos a emplear cuando necesitemos que en nuestro código tome decisiones, es decir si una condición se cumple o no: True, False  |
 
 ## Repaso de variables
-Me gusta pensar que las variables son cajas en las que almacenamos cosas, esas cosas son los tipos de datos anteriormente vistos. En programación una variable se trata de un espacio en la memoria reservado para guardar información que se va modificando con el tiempo.
+Me gusta pensar que las variables son cajas en las que almacenamos cosas, esas cosas son los tipos de datos anteriormente vistos. En programación una variable se trata de un espacio en la memoria reservado para guardar información que se va modificando dinamicamente.
+
+Las variables se declaran de la siguiente manera:
+``` python
+mi_variable = "Bayta"
+```
+### Manual de buenas prácticas para nombrar variables:
+1. Legible: debes elegir un nombre que describa lo que contiene tu variable para que tu código se legible.
+2. Unidad: con el fin de ser mas descriptivos escribiremos nuestra variable seguida de _ ```numero_cuenta```.
+3. Hispanismo: :shipit: no sabemos si en el futuro nuestro código sea utilizado o analizado, por ello es preferible escribirlo en inglés para que sea estandar.
+4. Números: siempre después de una palabra ya que el compilador lo tomará como un error :x: ```2_funcion``` :white_check_mark: ```funcion_2```.
+5. Signos: Tus nombre de variebles no deben contener ninguno de estos signos: :",<>/?|\\()!'@#$%^&*~-+
+6. Palabras clave: No podremos usar palabras clave reservadas por el propio sistema, tales como: print, input, string, int... Lo que si podemos usar es la palabra clave seguida de otra cosa: ```my_print``` ```int_total```
+
+## Usando números
+Aquí te daré tips para que uses el tipo de dato númerico ideal para tu programa.
+Usaremos int en caso de manejar valores como edades, cantidades de personas, números de dias, posiciones en una lista....
+``` python
+edad = 42
+poblacion = 3000054
+dias_restantes = 5
+n_clientes = 635
+```
+Usaremos float si mis valores son temperaturas, precios, pesos y medidas...
+``` python
+grados = -3.5
+valor = 65.71
+altura = 1.76
+```
