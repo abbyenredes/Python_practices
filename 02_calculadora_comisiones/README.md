@@ -14,4 +14,4 @@ Hola autoestopista, hoy me acompañaras a crear una calculadora de comisiones pa
 | booleanos (bool) | Son valores lógicos sencillos ya que solo tienen dos valores, verdadero o falso, lo vamos a emplear cuando necesitemos que en nuestro código tome decisiones, es decir si una condición se cumple o no: True, False  |
 
 ## Repaso de variables
-Me gusta pensar que las variables son cajas en las que almacenamos cosas, esas cosas son los tipos de datos anteriormente vistos. En programación una variable se trata de un espacio en la memoria reservado para guardar información.
+Me gusta pensar que las variables son cajas en las que almacenamos cosas, esas cosas son los tipos de datos anteriormente vistos. En programación una variable se trata de un espacio en la memoria reservado para guardar información que se va modificando con el tiempo.
