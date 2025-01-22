@@ -110,3 +110,5 @@ animal = input("Dime un animal que te inspire: ")
 adjetivo = input("Dime un adjetivo que describa tu momento favorito: ")
 "¡Enhorabuena!\n El nombre de tu negocio es: " "\"",animal, adjetivo,"\"")
 ```
+### Resultado:
+![](https://github.com/abbyenredes/Python_practices/blob/main/01_generador_nombres/readme_files/01.gif)
