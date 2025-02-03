@@ -8,7 +8,7 @@ Hola autoestopista, hoy me acompañaras a crear una calculadora de comisiones pa
 | integer (int)  | 150, 42, -55, 0 Van sin commillas y podemos realizar operaciones aritméticas. |
 | floating (float)  | 1.25, -2.67, 541.467 Tambien van sin commillas y se pueden emplear para realizar operaciones aritméticas |
 | listas (list) | Se trata de una colección ordenada de objetos (cualquier tipo de dato) ["hola",42,-2.67,"%€&"], su orden lo determina su índice que va desde el 0 hasta n. siendo "hola" el índice 0 y "%€&" el índice 3. Siempre van entre [] y concatenados con una ",".|
-| diccionarios(dic) | Consisten entre pares de palabras agrupados que van escritos entre {}, se concatenan con ",", cada par contiene dos elementos, una clave y un valor que se concatenan con ":" {'color':'rosa','arte':'creatividad'} si pensamos en un diccionario convencional equivaldria a una palabra y su definición. :exclamation: los pares no estan ordenados con un índice como pasa con las listas. |
+| diccionarios(dic) | Consisten entre pares de palabras agrupados que van escritos entre {}, se concatenan con ",", cada par contiene dos elementos, una clave y un valor que se concatenan con ":" {"color":"rosa","arte":"creatividad"} si pensamos en un diccionario convencional equivaldria a una palabra y su definición. :exclamation: los pares no estan ordenados con un índice como pasa con las listas. |
 | tuples (tuple) | Son un conjunto ordenado de elementos(cualquier tipo de dato), también va ordenado por índices, la mayor diferencia con las listas es que su orden es inmutable. Van escritos entre () y se concatenan ",". ('jan','feb','mar','apr'). |
 | sets (set) | Se trata de un conjunto ordenado de elementos únicos , tanto listas como tuplas pueden tener elementos repetidos, pero en sets no pasa eso ya que cada elemento es único e irrepetible, van entre {} y concatenados "," {'a','b','c'} |
 | booleanos (bool) | Son valores lógicos sencillos ya que solo tienen dos valores, verdadero o falso, lo vamos a emplear cuando necesitemos que en nuestro código tome decisiones, es decir si una condición se cumple o no: True, False  |
@@ -42,4 +42,93 @@ Usaremos float si mis valores son temperaturas, precios, pesos y medidas...
 grados = -3.5
 valor = 65.71
 altura = 1.76
+```
+## Convirtiendo tipos de datos
+> [!TIP]
+>
+> Para conocer el tipo de dato que tenemos podemos recurrir a la función ```type```
+``` python
+edad = 42
+print(type(edad))
+```
+ ### Conversión implícita
+ python convierte el tipo de dato de forma automatica:
+ 
+ ``` python
+precio_manzana = 2.30
+precio_pera = 1
+print(type(precio_manzana + precio_pera))
+```
+el resultado es 3.3, si ponemos type en ese print nos diria que es un float
+al igual que si usasemos input su entrada convierte todo en str.
+
+### Conversión explícita
+Aquí le decimos a python en que tipo de dato queremos que se convierta:
+ ``` python
+edad = input("Dime tu edad: ")
+edad = int(edad)
+print(type(edad))
+nueva_edad = 1 + edad
+print("tu nueva edad es: ", nueva_edad)
+```
+Como vemos en el ejemplo input convierte automaticamente a str la variable lo que no nos permite hacer operaciones aritméricas, por ello realizamos un cast que en programacion significa cambiar de dato. Al hacer esto ya podemos utilizar ese dato para realizar operaciones en este caso sumar 1.
+
+## Formatear cadenas
+Nos sirve para concatenar distintos tipos de datos sin tener que recurrir a cast ya que no seria del todo óptimo. Por ello usaremos la función ```format```:
+
+ ``` python
+nombre = "Rosa"
+edad = 23
+altura = 1.78
+es_mayor_edad = True
+print(f"hola {nombre} tienes {edad} mides {altura} y eres mayor de edad {es_mayor_edad}")
+```
+
+También hay otra forma de declarar esta función:
+ ``` python
+nombre = "Rosa"
+edad = 23
+altura = 1.78
+print("hola {} tienes {} mides {}".format(nombre,edad,altura))
+```
+Personalmente me parece más estético la primera forma de declaración.
+
+## Operadores matemáticos
+Operaciones básicas:
+
+``` python
+x = 4
+y = 6
+print(f"la suma de {x} mas {y} es igual a {x+y}")
+print(f"la resta de {x} menos {y} es igual a {x-y}")
+print(f"la división de {x} entre {y} es igual a {x/y}")
+print(f"la mutiplicación de {x} por {y} es igual a {x*y}")
+```
+
+Operaciones avanzadas:
+
+``` python
+x = 2
+y = 7
+# si queremos un número sin decimales
+print(f"{x} dividido al piso {y} es igual a {x//y}")
+# si queremos saber el módulo de una división (se usa para ver los números pares)
+print(f"{x} módulo {y} es igual a {x%y}")
+# Para conocer la potencia
+print(f"{x} elevado {y} es igual a {x**y}")
+# Para conocer una raiz cuadrada
+print(f"la raiz cuadrada de {x} es igual a {x**0.5}")
+```
+
+### Redondeo
+Para redondear usamos la función ```round``` 
+Redondeo a número entero
+``` python
+resultado = round(9/7)
+print(resultado)
+```
+Redondeo a 2 decimales
+``` python
+valor = round(9.6546)
+print(valor)
 ```
