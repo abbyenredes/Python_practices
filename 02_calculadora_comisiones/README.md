@@ -26,7 +26,7 @@ mi_variable = "Bayta"
 3. Hispanismo: :shipit: no sabemos si en el futuro nuestro código sea utilizado o analizado, por ello es preferible escribirlo en inglés para que sea estandar.
 4. Números: siempre después de una palabra ya que el compilador lo tomará como un error :x: ```2_funcion``` :white_check_mark: ```funcion_2```.
 5. Signos: Tus nombre de variebles no deben contener ninguno de estos signos: :",<>/?|\\()!'@#$%^&*~-+
-6. Palabras clave: No podremos usar palabras clave reservadas por el propio sistema, tales como: print, input, string, int... Lo que si podemos usar es la palabra clave seguida de otra cosa: ```my_print``` ```int_total```
+6. Palabras clave: No podremos usar palabras clave reservadas por el propio sistema, tales como: `['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']` Lo que si podemos usar es la palabra clave seguida de otra cosa: ```my_print``` ```int_total```
 
 ## Usando números
 Aquí te daré tips para que uses el tipo de dato númerico ideal para tu programa.
