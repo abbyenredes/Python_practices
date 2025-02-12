@@ -25,7 +25,7 @@ Y creamos un entorno virtual:
 > [!TIP]
 > puedes usar uv para hacer esto mas rapido: `uv pip install -r pip requirements.txt`
 > para descargar uv en tu entorno [UV](https://github.com/astral-sh/uv)
-> También con `uv init --bare` crea automaticamente pyproject.toml
+> También con `uv init --bare` crea automaticamente pyproject.toml que registra los metadatos del proyecto.
 > ``` toml
 > [project]
 > name = "intro-python"
@@ -33,8 +33,23 @@ Y creamos un entorno virtual:
 > requieres-python = ">=3.10"
 > dependencies = []
 > ```
->
-> `uv sync`
+> 
+> Si queremos agregar las distintas dependencias usaremos `uv add pandas`
+> eso nos daria como resultado en .toml la version de esa libreria
+> ``` toml
+> [project]
+> name = "intro-python"
+> version = "0.1.0"
+> requieres-python = ">=3.10"
+> dependencies = [
+>   "pandas>=2.2.3",
+> ]
+> ```
+> 
+> Si borasemos por error el entorno virtual y quisieramos volver a iniciar y
+> recuperar esos metadatos usaremos `uv sync` Si queremos volcar informacion >
+> requirements.txt `uv export --format requirements.txt > requirements.txt` Aqui se
+>  guardara las dependencias directas y transitivas con sus correspondientes versiones
 
 
 > [!IMPORTANT]
