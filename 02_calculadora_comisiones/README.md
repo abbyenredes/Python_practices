@@ -129,6 +129,12 @@ print(resultado)
 ```
 Redondeo a 2 decimales
 ``` python
-valor = round(9.6546)
+# round(número_a_redondear, decimales_que_visualizar)
+valor = round(9.6546, 2)
 print(valor)
+
+# round(numero/operacion_aritmetica) <- para redondear numeros enteros
+resultado = 17/7
+redondeo = round(resultado)
+print(redondeo)
 ```
