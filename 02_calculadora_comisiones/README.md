@@ -133,8 +133,21 @@ Redondeo a 2 decimales
 valor = round(9.6546, 2)
 print(valor)
 
-# round(numero/operacion_aritmetica) <- para redondear numeros enteros
-resultado = 17/7
-redondeo = round(resultado)
-print(redondeo)
 ```
+## Vamos a crear la calculadora de comisiones
+Para la empresa x nos han pedido que desarrollemos un programa que permita a los vendedores conocer su comisión mensual:
+- Tiene que pedirle su nombre
+- ¿Cuanto ha vendido este mes?
+- Calcular comision venta * 13 / 100
+- Da resultado: Ok (nombre) este mes ganaste (comision) €
+- La comision debe esta redondeada a 2 decimales.
+
+```python
+nombre = input("Dime tu nombre: ")
+venta_mes = float(input("Dime cuando has vendido este mes: "))
+comision = venta_mes * 13 / 100
+comision = round(comision, 2)
+print(f"Ok {nombre} este mes ganaste {comision} €")
+```
+
+
