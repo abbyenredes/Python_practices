@@ -1,56 +1,11 @@
-# Python_practices
-# Intro python
+# Creemos un analizador de texto
 
-> Creemos un nuevo directorio: `mkdir intro_python`
-
-> Abrimos la carpeta: `cd intro_python`
-
-> comprobamos que versión de python tenemos `python3 --version`
-
-Y creamos un entorno virtual: 
-> Primero generemos la carpeta .venv `python3 -m venv .venv`
-
-> Activamos `source .venv/bin/activate`
-
-> [!TIP]
-> crear un archivo de requerimientos en el que pondremos las librerias que vamos a usar. Ten encuenta que esta carpeta no puede ir dentro de la .venv.
-
-> Crea tu archivo `vim requirements.txt` agrega:
-> ``` txt
->  pandas
->  notebook
-> ````
->  y ejecutamos: `pip install -r requirements.txt`
-
-> [!TIP]
-> puedes usar uv para hacer esto mas rapido: `uv pip install -r pip requirements.txt`
-> para descargar uv en tu entorno [UV](https://github.com/astral-sh/uv)
-> También con `uv init --bare` crea automaticamente pyproject.toml que registra los metadatos del proyecto.
-> ``` toml
-> [project]
-> name = "intro-python"
-> version = "0.1.0"
-> requieres-python = ">=3.10"
-> dependencies = []
-> ```
-> 
-> Si queremos agregar las distintas dependencias usaremos `uv add pandas`
-> eso nos daria como resultado en .toml la version de esa libreria
-> ``` toml
-> [project]
-> name = "intro-python"
-> version = "0.1.0"
-> requieres-python = ">=3.10"
-> dependencies = [
->   "pandas>=2.2.3",
-> ]
-> ```
-> 
-> Si borasemos por error el entorno virtual y quisieramos volver a iniciar y
-> recuperar esos metadatos usaremos `uv sync` Si queremos volcar informacion >
-> requirements.txt `uv export --format requirements.txt > requirements.txt` Aqui se
->  guardara las dependencias directas y transitivas con sus correspondientes versiones
-
-
-> [!IMPORTANT]
-> Si decides salir del entorno `deactivate`
+## Repasemos el uso de métodos
+En python tenemos más de 30 métodos para manipular y analizar str. Repasemos los más importantes:
+| Métodos | Descripción |
+| ------------- | ------------- |
+| index()  | Nos permite conocer en que posicion se encuentra un caracter, hay dos formas de uso. Imagina la variable nombre = Rosa, si quisiera saber en que posicion se encuentra la letra s, usaria `|
+|  | - |
+|  | - |
+|  | - |
+### Index()
