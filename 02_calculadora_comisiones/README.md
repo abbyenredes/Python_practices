@@ -149,5 +149,5 @@ comision = venta_mes * 13 / 100
 comision = round(comision, 2)
 print(f"Ok {nombre} este mes ganaste {comision} €")
 ```
-
-
+## Resultado
+![Calculadora](https://github.com/abbyenredes/Python_practices/blob/main/02_calculadora_comisiones/img/02_calculadora.gif)
